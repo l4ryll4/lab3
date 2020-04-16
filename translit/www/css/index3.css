@@ -24,8 +24,8 @@ body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-color:#E4E4E4;
-    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-color:#66CDAA;
+    background-image:linear-gradient(top, #A7A7A7 0%, #66CDAA 51%);
     font-family: system-ui, -apple-system, -apple-system-font, 'Segoe UI', 'Roboto', sans-serif;
     font-size:12px;
     height:100vh;
@@ -107,7 +107,7 @@ h1 {
 }
 
 table{
-	border: 3px ridge silver;
+	border: 3px double #008080;
 	border-collapse: collapse;
 	width: 95%;
 	height: 165px;
@@ -115,7 +115,7 @@ table{
 }
 
 #tab{
-	border: 3px ridge silver;
+	border: 3px double #008080;
 	border-collapse: collapse;
 	width: 95%;
 	height: 50px;

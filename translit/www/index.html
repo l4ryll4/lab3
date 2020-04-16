@@ -37,7 +37,19 @@
     </head>
     <body>
 	
-		<table border="1" style="border-collapse: collapse; width: 100%; height: 165px;">
+	<table id="tab">
+			<tbody>
+				<tr style="height: 50px;">
+					<td style="width: 47.1418%; text-align: center;">
+							<button onclick="changeCSS('css/index.css', 0)"> Тема 1 </button>
+							<button onclick="changeCSS('css/index2.css', 0)"> Тема 2 </button>
+							<button onclick="changeCSS('css/index3.css', 0)"> Тема 3 </button>
+					</td>
+				</tr>
+			</tbody>
+	</table>
+	
+		<table>
 			<tbody>
 				<tr style="height: 165px;">
 					<td style="width: 47.1418%; height: 165px; text-align: center;">
@@ -46,9 +58,9 @@
 					</td>
 					
 					<td style="width: 9%; height: 165px; text-align: center;">
-						<p><button onclick="rus_to_latin('Снежный ком')">Кириллица в латынь</button></p>
+						<p><button onclick="rus_to_latin('Снежный ком')">Кириллица в латиницу</button></p>
 						
-						<p><button onclick="latin_to_rus('Снежный ком')">Латынь в кириллицу</button></p>
+						<p><button onclick="latin_to_rus('Снежный ком')">Латиница в кириллицу</button></p>
 						
 						<p><button onclick="clean()">Очистить</button></p>
 					</td>

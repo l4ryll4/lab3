@@ -105,3 +105,45 @@ h1 {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
 }
+
+table{
+	border: 3px ridge silver;
+	border-collapse: collapse;
+	width: 95%;
+	height: 165px;
+	margin: auto;
+}
+
+#tab{
+	border: 3px ridge silver;
+	border-collapse: collapse;
+	width: 95%;
+	height: 50px;
+	margin: auto;
+	border-top: none;
+	border-bottom: none;
+}
+
+.tr{
+	height: 165px;
+}
+
+.lefttd{
+	width: 45%;
+	height: 165px;
+}
+
+.midtd{
+	width: 10%;
+	height: 165px;
+	text-align: center;
+}
+
+.righttd{
+	width: 45%;
+	height: 165;
+	text-align: center;
+}
+
+
+

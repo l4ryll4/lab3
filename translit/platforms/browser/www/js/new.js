@@ -1,5 +1,3 @@
-alert("вы пидорас");
-
 function clean(){
 	document.getElementById('text1').value = '';
 	document.getElementById('text2').value = '';
@@ -37,11 +35,11 @@ function latin_to_rus ( str ) {
     
     var latin = {
         'a': 'а', 'b': 'б', 'v': 'в', 'g': 'г', 'd': 'д', 
-        'e': 'е', 'e': 'ё', 'j': 'ж', 'z': 'з', 'i': 'и', 
+        'e': 'е', 'j': 'ж', 'z': 'з', 'i': 'и', 
         'k': 'к', 'l': 'л', 'm': 'м', 'n': 'н', 'o': 'о', 
         'p': 'п', 'r': 'р', 's': 'с', 't': 'т', 'u': 'у', 
         'f': 'ф', 'h': 'х', 'c': 'ц', 'ch': 'ч', 'sh': 'ш', 
-        'shch': 'щ', 'y': 'ы', 'e': 'э', 'u': 'ю', 'ya': 'я',
+        'shch': 'щ', 'y': 'ы', 'e': 'е', 'u': 'ю', 'ya': 'я',
     }, n_str = [];
     
     str = str.replace(/[ъь]+/g, '').replace(/й/g, 'i');
@@ -55,4 +53,15 @@ function latin_to_rus ( str ) {
     }
     
     document.getElementById('text1').value = n_str.join('');
+}
+
+function changeCSS(cssFile, cssLinkIndex) {
+	var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+	
+	var newlink = document.createElement("link");
+	newlink.setAttribute("rel", "stylesheet");
+	newlink.setAttribute("type", "text/css");
+	newlink.setAttribute("href", cssFile);
+	
+	document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
 }
